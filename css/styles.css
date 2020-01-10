@@ -1,0 +1,173 @@
+/* GLOBAL STYLES */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: "roboto", "Arial", sans-serif;
+    color: #555252;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+/* NAV */
+.page-nav{
+    padding: 37px 0;
+}
+
+.logo{
+    float: left;
+    display: block;
+    color: #555252;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+.logo span{
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.page-menu{
+    float: right;
+    padding: 0;
+    list-style: none;
+}
+
+.page-menu-item{
+    float: left;
+}
+
+.page-menu-item a{
+    font-family: "open sans";
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #0f0101;
+    font-weight: 900;
+    line-height: 0.786;
+}
+
+.page-menu-item a:hover, .page-menu-item a:focus    {
+    color: #1abc9c;
+}
+
+.page-menu-item:not(:nth-child(4n)){
+    margin-right: 31px;
+}
+
+/* MAIN */
+
+.section-title{
+    margin-bottom: 92px;
+}
+
+.section-title h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.section-title::after{
+    display: block;
+    margin: 0 auto;
+    content: '';
+    background-color: #1abc9c;
+    width: 164px;
+    height: 7px;
+}
+
+
+/* FEATURED PRODUCTS */
+.featured-prodcuts{
+    list-style: none;
+}
+
+.featured-item{
+    float: left;
+    width: 255px;
+    margin-bottom: 30px;
+}
+
+.featured-item:not(:nth-child(4n+0)){
+    margin-right: 30px;
+}
+
+.featured-item:hover .featured-item-details{
+    background: #1abc9c;
+}
+
+.featured-image-container{
+    background-color: #e8effc;
+    height: 282px;
+    width: 255px;
+}
+
+.featured-image{
+    display: block;
+    outline: 1px solid black;
+    max-height: 255px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.featured-item-details{
+    padding: 0;
+    outline: 1px solid teal;
+    background-color: #323232;
+    height: 40px;
+    width: 255px;
+}
+
+.feeatured-item-name{
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 4px 13px 4px;
+}
+
+.price-font{
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.item-price-container{
+    float: right;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    background-color:#8c8c8c;
+}
+
+.price{
+    text-align: center;
+
+}
