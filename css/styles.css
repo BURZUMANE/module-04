@@ -132,16 +132,25 @@ main{
 }
 
 .featured-image-container{
+    position: relative;
+    text-align: center;
     background-color: #e8effc;
     height: 282px;
     width: 255px;
 }
 
 .featured-image{
-    display: block;
-    max-height: 255px;
-    max-width: 250px;
-    margin: 0 auto;
+    outline: 1px teal solid;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .featured-item-details{
@@ -224,6 +233,7 @@ main{
 
 .read-more{
     border-radius: 3px;
+    border: none;
     background-color: #4ec6ab;
     width: 159px;
     height: 51px; 
