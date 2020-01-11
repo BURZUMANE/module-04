@@ -199,8 +199,9 @@ main{
 }
 
 .news-list-item-title {
-    font-size: 18px;
-    font-family: "OpenSans";
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 200;
     color: #555252;
     margin-bottom: 27px;
 }
