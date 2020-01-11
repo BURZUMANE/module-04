@@ -140,7 +140,6 @@ main{
 }
 
 .featured-image{
-    outline: 1px teal solid;
     max-height: 100%;
     max-width: 100%;
     width: auto;
