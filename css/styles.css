@@ -7,8 +7,10 @@
 html {
     box-sizing: border-box;
   }
-  
-
+/* 1. ссылочки делаем блочными */
+a {
+    display: block;
+}
 
   *,
   *::before,
@@ -110,9 +112,6 @@ body{
 
 
 /* FEATURED PRODUCTS */
-main{
-    margin-bottom: 70px;
-}
 .featured-prodcuts{
     list-style: none;
 }
@@ -122,6 +121,10 @@ main{
     width: 255px;
     margin-bottom: 30px;
 }
+/* 4. у четырех крайних featured-item не должно быть маржина-боттом */
+.featured-item:nth-last-child(-n+4){
+    margin-bottom: 96px;
+}
 
 .featured-item:not(:nth-child(4n+0)){
     margin-right: 30px;
@@ -130,6 +133,11 @@ main{
 .featured-item:hover .featured-item-details{
     background: #1abc9c;
 }
+/* 3. при ховере на карточку, цвет блока с ценой тоже должен меняться */
+.featured-item:hover .item-price-container{
+    background: #7fd9c7;
+}
+
 
 .featured-image-container{
     position: relative;
@@ -187,9 +195,9 @@ main{
 }
 
 /* LATEST NEWS */
-
+/* 7. .latest-news-section вместо маржина-боттом нужен паддинг-боттом */
 .latest-news-section{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 .news-list-item{
@@ -242,5 +250,16 @@ main{
     color: #fff;
     outline: none;
     cursor: pointer;
-    margin: 0;
+    /* margin: 0; */
 }
+
+.read-more a{
+    position: absolute;
+    display: block;
+    vertical-align: middle;
+}
+
+.read-more:hover{
+    background: #8c8c8c;
+}
+
