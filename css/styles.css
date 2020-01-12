@@ -8,7 +8,7 @@ html {
     box-sizing: border-box;
   }
 /* 1. ссылочки делаем блочными */
-a {
+a{
     display: block;
 }
 
@@ -88,11 +88,11 @@ body{
 
 /* MAIN */
 
-.section-title{
-    margin-bottom: 92px;
-}
+/* .section-title{
+    
+} */
 
-.section-title h2{
+.section-title{
     text-align: center;
     font-size: 48px;
     font-weight: 900;
@@ -100,16 +100,27 @@ body{
     margin: 0;
     padding-bottom: 32px;
 }
-
-.section-title::after{
+/* 6.нарушаеться класс section-title дайте заголовку, а див, который его */
+/* .section-title::after{
     display: block;
     margin: 0 auto;
     content: '';
     background-color: #1abc9c;
     width: 164px;
     height: 7px;
-}
+} */
 
+/* приходится делать новый див для полосы */
+
+.underline{
+    display: block;
+    margin: 0 auto;
+    content: '';
+    background-color: #1abc9c;
+    width: 164px;
+    height: 7px;
+    margin-bottom: 92px;
+}
 
 /* FEATURED PRODUCTS */
 .featured-prodcuts{
@@ -253,7 +264,7 @@ body{
     /* margin: 0; */
 }
 
-.read-more a{
+/* .read-more a{
     position: absolute;
     display: block;
     vertical-align: middle;
@@ -261,5 +272,21 @@ body{
 
 .read-more:hover{
     background: #8c8c8c;
+} */
+
+.btn{
+    display: inline-block;
+    background-color: #4ec6ab;
+    border: none;
+    border-radius: 3px;
+    padding-top: 17px;
+    width: 159px;
+    height: 51px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
 }
 
+.btn:hover{
+    background: #8c8c8c;
+}
