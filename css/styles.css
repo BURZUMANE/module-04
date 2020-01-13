@@ -98,21 +98,23 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 32px;
+    padding-bottom: 90px;
 }
 /* 6.нарушаеться класс section-title дайте заголовку, а див, который его */
-/* .section-title::after{
+.section-title::after{
     display: block;
-    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     content: '';
     background-color: #1abc9c;
     width: 164px;
     height: 7px;
-} */
+}
 
 /* приходится делать новый див для полосы */
 
-.underline{
+/* .underline{
     display: block;
     margin: 0 auto;
     content: '';
@@ -120,7 +122,7 @@ body{
     width: 164px;
     height: 7px;
     margin-bottom: 92px;
-}
+} */
 
 /* FEATURED PRODUCTS */
 .featured-prodcuts{
