@@ -98,7 +98,7 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
 }
 /* 6.нарушаеться класс section-title дайте заголовку, а див, который его */
 .section-title::after{
@@ -125,6 +125,10 @@ body{
 } */
 
 /* FEATURED PRODUCTS */
+.featured-products-section{
+    padding-bottom: 96px;
+}
+
 .featured-prodcuts{
     list-style: none;
 }
@@ -135,8 +139,12 @@ body{
     margin-bottom: 30px;
 }
 /* 4. у четырех крайних featured-item не должно быть маржина-боттом */
+
+/* .featured-item:nth-last-child(-n+4) {
+margin-bottom: 96px;
+} должен быть 0 */
 .featured-item:nth-last-child(-n+4){
-    margin-bottom: 96px;
+    margin-bottom: 0;
 }
 
 .featured-item:not(:nth-child(4n+0)){
